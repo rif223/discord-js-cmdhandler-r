@@ -1,0 +1,14 @@
+{
+  "name": "discord-js-cmdhandler",
+  "description": "A simple command handler for discord.js",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/main.js"
+  },
+  "author": "rif223",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^12.3.1"
+  }
+}
