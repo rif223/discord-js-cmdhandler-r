@@ -70,8 +70,8 @@ module.exports = class CmdHandler {
   
   _getRoleFromUser(userID) {
     let role = [];
-    this.client.guilds.forEach(g => {
-      let member = g.members.get(userID);
+    this.client.guilds.cache.forEach(g => {
+      let member = g.members.cache.get(userID);
       if(member) {
         member._roles.forEach(r => {
           if(this.getRolePerm(r)) {
