@@ -1,5 +1,5 @@
 {
-  "name": "discord-js-r-cmdhandler",
+  "name": "discord-js-cmdhandler-r",
   "description": "A simple command handler for discord.js",
   "version": "0.1.0",
   "main": "src/index.js",
