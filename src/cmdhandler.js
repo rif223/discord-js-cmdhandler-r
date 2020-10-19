@@ -145,7 +145,9 @@ module.exports = class CmdHandler {
     
     if(this.cmds[cmd]) {
       
-      let rolePermLvl = this._getHighestPermRoleFromUser(aut.id).permLvl;
+      let rolePerm = this._getHighestPermRoleFromUser(aut.id);
+      let rolePermLvl;
+      if(rolePerm) rolePermLvl = rolePerm.permLvl;
       let userPermLvl = this.getUserPerm(aut.id);
       
       let permLvl = 0;
